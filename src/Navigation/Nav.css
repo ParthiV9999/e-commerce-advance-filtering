@@ -1,0 +1,22 @@
+.navbar {
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.navbar .search-bar input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(117, 117, 117);
+  border-radius: 10px;
+  color: white;
+}
+
+.navbar .search-bar input::placeholder {
+  color: rgb(174, 174, 174);
+}
+
+.navbar .nav-icon > span {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
