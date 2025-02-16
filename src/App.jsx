@@ -47,10 +47,7 @@ function App() {
     query === "" && setFilteredProducts([...allProducts]);
 
     if (query) {
-      query &&
-        setFilteredProducts((prev) =>
-          searchFilter.length > 0 ? [...searchFilter] : [...prev]
-        );
+      query && setFilteredProducts([...searchFilter]);
     } else if (selectedCategory) {
       selectedCategory && setFilteredProducts([...clickFilter]);
     }
@@ -72,7 +69,7 @@ function App() {
         )
       )
     ) : (
-      <div className="not-found text-bg-clip flex-cc">No Products Found !</div>
+      <div className="not-found text-bg-clip">No Products Found!</div>
     );
 
   return (

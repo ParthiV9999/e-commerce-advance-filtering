@@ -34,8 +34,9 @@
 }
 
 .not-found {
+  grid-column: span var(--column);
   text-align: center;
-  font-size: 8vw;
+  font-size: calc(2rem + 1vw);
   font-weight: 900;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.6TcxO0DqxvOI00imV_fZYAHaFj%26pid%3DApi&f=1&ipt=496468513798794c600c3974bc8715bb3e5e0400c5a87660fb3ab826d785c5e7&ipo=images");
 }
